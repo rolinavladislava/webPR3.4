@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Fight</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="body">
+      <header>
+        <img
+          class="logo"
+          title="Reset Game"
+          src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pokémon_logo.svg"
+          alt="Pokemon"
+        />
+      </header>
+      <div class="playground">
+        <div class="pokemon character">
+          <span class="lvl">Lv. 1</span>
+          <img
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
+            class="sprite"
+          />
+          <div class="details">
+            <h2 class="name" id="name-character">Pikachu</h2>
+            <div class="hp">
+              <div class="bar">
+                <div
+                  class="health"
+                  id="progressbar-character"
+                  style="width: 100%"
+                ></div>
+              </div>
+              <span class="text" id="health-character">100 / 100</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="control">
+          <button class="button" id="btn-kick">Thunder Jolt</button>
+          <button class="button" id="btn-quick">Quick Attack</button>
+        </div>
+
+        <div class="enemys">
+          <div class="pokemon enemy">
+            <span class="lvl">Lv. 1</span>
+            <img
+              src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
+              class="sprite"
+            />
+            <div class="details">
+              <h2 class="name" id="name-enemy1">Charmander</h2>
+              <div class="hp">
+                <div class="bar">
+                  <div
+                    class="health"
+                    id="progressbar-enemy1"
+                    style="width: 100%"
+                  ></div>
+                </div>
+                <span class="text" id="health-enemy1">100 / 100</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pokemon enemy">
+            <span class="lvl">Lv. 1</span>
+            <img
+              src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+              class="sprite"
+            />
+            <div class="details">
+              <h2 class="name" id="name-enemy2">Bulbasaur</h2>
+              <div class="hp">
+                <div class="bar">
+                  <div
+                    class="health"
+                    id="progressbar-enemy2"
+                    style="width: 100%"
+                  ></div>
+                </div>
+                <span class="text" id="health-enemy2">100 / 100</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="logs"
+          class="logs"
+          aria-live="polite"
+          style="max-width: 640px; margin: 0 auto; text-align: left"
+        ></div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
